@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Some Events</title>
-    <script>
-      function myFunction() {
-      alert ("Unit 5");
-      }
-      function theFunction() {
-      System.out.print("The button has been clicked");
-      }
-    </script>
-    </head>
-      <body onload="myFunction()">
-        <h1>The page has loaded.</h1>
-        <button onclick = "theFuction()">Click Me!</button>
-      </body>
+<!doctype html>
+<html>
+
+<script>
+
+function showEvent(from, text) {
+alert( from + text );}
+showEvent('Load','Page');
+</script>
+
+<body onload = "showEvent('Hello Page!' , 'The page has loaded.')">
+
+<button onClick=showEvent('Ah!','You clicked the button! Good for you!')" type="button">Click me!</button>
+
+
+</body>
+
 </html>
