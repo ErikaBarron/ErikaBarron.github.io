@@ -10,6 +10,19 @@
     /* <![CDATA[ */
     function checkTheNumber()
     {
+<body>
+
+<h3>Number Checker</h3>
+
+<form action="NumberCheck.html" method="post" name="theForm"
+      onsubmit="checkTheNumber(); return false;">
+  Enter a number: <input type="text" name="theNumber" id="theNumber" />
+
+  <br />
+  <br />
+
+  <input type="submit" value="Check the Number" />
+</body>
       var num = document.getElementById("theNumber").value;
       var msg = "";
       
@@ -22,8 +35,8 @@
       else (num = 100) {
         msg = "The number is equal to 100";      
       }
+     alert(msg);
     }
-      alert(msg);
     
     /* ]]> */
 
@@ -42,7 +55,7 @@
   <br />
 
   <input type="submit" value="Check the Number" />
-
-</form>
 </body>
+</form>
+
 </html>
