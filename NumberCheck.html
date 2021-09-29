@@ -8,29 +8,15 @@
   <script type="text/javascript">
 
     /* <![CDATA[ */
-
-    function checkTheCode()
+    function checkTheNumber()
     {
-    var msg = "";
-      var areaCode = document.getElementById("theCode").options[document.getElementById("theCode").selectedIndex].value;
-      switch (parseInt(areaCode))
-      {
-      case 617:
-          msg = "Boston's area code is " + areaCode;
-      break;    
-      case 212:
-          msg = "Manhattan's area code is " + areaCode;
-      break;    
-       case 415:
-          msg = "San Francisco's area code is " + areaCode;
-       break;   
-       case 813:
-          msg = "Tampa's area code is " + areaCode;
+      var num = document.getElementById("theNumber").value;
+      var msg = "";
+      
+      if (num >= 100)
 
-                   break;
-              default:
-                           msg = "You did not select a city.";
-       }
+        msg = msg + "The number is greater than ";
+        msg = msg + "or equal to 100.";      
 
       alert(msg);
     }
