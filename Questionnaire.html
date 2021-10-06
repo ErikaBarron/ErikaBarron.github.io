@@ -1,20 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
+ <html>
+ <body>
+   <head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="Samples.css">
+     <title>Questionnarie</title>
+   </head>
+ <p> The information you have entered is: </p> 
 
-<html>
-<head>
- </head>
-  <meta charset="UTF-8">
-<script>
-    
-    String name ="";
-    String address="";
-    String occupation="";
-    
-    Scanner input = new Scanner(System.in);
-    
-    System.out.println("Enter your Name");
-    name= input.nextLine();
-    <head>
-  </script>
-   
-<html>
+ <script>
+ var name = prompt("Please enter your name");
+ var address = prompt("Please enter your address");
+ var jobTitle = prompt("Please enter your job");
+
+ var infoList = new Array(3);
+ infoList[0] = name; 
+ infoList[1] = address; 
+ infoList[2] = jobTitle; 
+
+ for(i=0; i < infoList.length; i++){
+ document.write(infoList[i]+"<br>");}
+   {
+     document.write("Thank you for your information! You supplied this information:);
+                       }
+
+ </script>
+ </body>
+ </html>
