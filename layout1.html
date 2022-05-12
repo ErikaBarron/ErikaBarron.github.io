@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style the header */
+header {
+  background-color: #EBEFC0;
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 620px; /* only for demonstration, should be removed */
+  background: #CBC3E3;
+  padding: 20px;
+  font-size: 30px;
+
+}
+
+/* Style the list inside the menu */
+
+article {
+  float: left;
+  padding: 20px;
+  font-size: 25px;
+  width: 70%;
+  background-color: #CBC3E3;
+  height: 620px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: black;
+  padding: 70px;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>~ Extracurriculars ~</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <a href = "../index.html">Home</a>
+
+    </ul>
+  </nav>
+  
+  <article>
+    <h2>• High School</h2>
+        <p>I was part of my schools marching band for two years before the pandemic.</p>
+        <p>I am part of a program called L3Mentors. What we do is organize events, decorate the school, community serivce and mentor under classmen.</p>
+    <h2>• Community Service</h2>
+        <p>Habitat for Humanity: Cleaned and built furniture to get out more products to sell.</p>
+        <p>St. James Church: Assembled and served food in the cafeteria on all Sundays of a month after each mass. I helped clean the kitchen, dining area, and other common areas </p>
+        <p>LifePoint Church: Helped clean and set up for event, made, packaged, and served food to guests.</p>
+        <p>J. Bowie Elementary School Volunteer: Served food to families in the cafeteria and assisted with clean up after events</p>
+  </article>
+</section>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
+

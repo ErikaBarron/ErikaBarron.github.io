@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style the header */
+header {
+  background-color: #EBEFC0;
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 840px; /* only for demonstration, should be removed */
+  background: #CBC3E3;
+  padding: 20px;
+  font-size: 30px;
+
+}
+
+article {
+  float: left;
+  padding: 20px;
+  font-size: 25px;
+  width: 70%;
+  background-color: #CBC3E3;
+  height: 840px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: black;
+  padding: 70px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>~ Experience ~</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <a href = "../index.html">Home</a>
+
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>• Courses</h1>
+    <p>IMED-1416 51801 Web Design-I</p>
+    <p>IMED-2415 53801 Web Design-Ii</p>
+    <p>COSC-1436 52E00 Programming Fundamentals I</p>
+    <p>COSC-1437 51G01 Programming Fundamentals II</p>
+
+    <h1>• IBM, Dallas Intern  June 2021-July 2021 </h1>
+    <p>Learned about the working environment, business expectations, and collaborative teamwork
+    Created an app for the business challenge given and presented the solution to the IBM Talent Acquisition Team</p>      
+
+    <h1>• About Me Website  Fall 2019- Spring 2020 </h1>
+    <p>Created multi page website using HTML/CSS that included links to other pages I developed. 
+    I implemented a feature that would start an email when the link on my email address was clicked.</p>
+    
+    <h1>• Personal Blog Website Fall 2021</h1>
+    <p>Created a personal blog website with easy navigation banners, pictures, and sentences.
+    Implemented a navigation bar with home button to direct the viewer back to home and various other 
+    buttons that direct you to other sections of the blog.</p>
+  </article>
+</section>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style the header */
+header {
+  background-color: #EBEFC0;
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 500px; /* only for demonstration, should be removed */
+  background: #CBC3E3;
+  padding: 20px;
+  font-size: 30px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  font-size: 25px;
+  width: 70%;
+  background-color: #CBC3E3;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: black;
+  padding: 70px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>~ About Me ~</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <a href = "../index.html">Home</a>
+
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>ERIKA BARRON</h1>
+    <p>I am a first generation Mexican-American.</p>
+    <p>I have 3 sisters and 1 brother and have lived in Dallas Texas my whole life.</p>
+    <p>I plan to attend a 4 year university and pursue a career as a software engineer.</p>
+    <h1>• W.H. Adamson Highschool  Expected Graduation June 2022</h1>
+    <p>High School Diploma GPA: 92.4</p>
+    <h1>• Dallas College, El Centro Campus Expected Graduation June 2022</h1>
+    <p>Associates in Applied Science GPA: 3.84</p>
+
+  </article>
+</section>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
+
